@@ -42,6 +42,20 @@ describe('Rooster', () => {
         Rooster.timeAtDawn(inputNumber) 
         //Exercise
       }, expected)
-    } )
+    })
+
+    it('throws a range error if passed a number more than 23', () => {
+      //Setup
+      const inputNumber = 24
+      const expected = RangeError
+
+      //Verify
+      assert.throws(() => {
+        Rooster.timeAtDawn(inputNumber) 
+        //Exercise
+      }, expected)
+    })
+
+    
   })
 })
