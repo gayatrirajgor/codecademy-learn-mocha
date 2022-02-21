@@ -41,7 +41,5 @@ describe('Calculate', () => {
       //Verify
       assert.equal(result, expectedResult)
     })
-
-
   })
 })
