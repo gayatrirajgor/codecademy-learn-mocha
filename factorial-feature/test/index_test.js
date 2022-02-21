@@ -17,7 +17,19 @@ describe('Calculate', () => {
       //Verify
       assert.equal(result, expectedResult)
     })
-
     
+    it('returns correct value of 3!', () => {
+      //Setup
+      const inputNumber = 3
+      const expectedResult = 6
+      
+      //Exercise
+      const result = Calculate.factorial(inputNumber)
+
+      //Verify
+      assert.equal(result, expectedResult)
+    })
+
+
   })
 })
